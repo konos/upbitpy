@@ -232,7 +232,7 @@ class Upbitpy():
         }
         if secondary_address is not None:
             data['secondary_address'] = secondary_address
-        return self._post(URL, self._get_headers(data), data)
+        return self._post(URL, self._get_headers(data), data, result_code=201)
 
     def withdraws_krw(self, amount):
         '''
